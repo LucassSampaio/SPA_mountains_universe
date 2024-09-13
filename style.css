@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+
+  --tc-pri: #FFFFFF;
+  --tc-sec: #C4C4CC;
+}
+
+body, .home, .exploration, .universe {
+  /* background: url("./img/mountains-universe-1.png") no-repeat;
+  background-size: cover; */
+  width: 100%;
+  height: 100vh;
+
+}
+
+/* Style das paginas diferentes */
+.home{
+  background: url("./img/mountains-universe-1.png") no-repeat;
+  background-size: cover;
+}
+
+.exploration{
+  background: url("./img/mountains-universe-2.png") no-repeat;
+  background-size: cover;
+  text-align: justify;
+}
+
+.universe{
+  background: url("./img/mountains-universe-3.png") no-repeat;
+  background-size: cover;
+  text-align: justify;
+}
+
+._404{
+  background-color: black;
+}
+
+nav {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tc-pri);
+    margin-left: 1.8rem;
+}
+
+a + a{
+  margin: 1rem;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+  margin: auto;
+  height: 80%;
+}
+
+#app {
+  /* border: 1px solid white; */
+  color: var(--tc-pri);
+  display: flex;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 12px 32px;
+  margin: auto 3rem;
+}
+
+.home #app{
+  height: 80%;
+}
+
+.universe, .exploration{
+  width: 40rem;
+}
+
+.universe #nav_universe,
+.exploration #nav_exploration,
+.home #nav_home {
+  font-weight: bold;
+}
+
+.home #nav_universe,
+.home #nav_exploration,
+.universe #nav_home,
+.universe #nav_exploration,
+.exploration #nav_home,
+.exploration #nav_universe {
+  color: var(--tc-sec);
+}
+
+.universe h1, .exploration h1, .main h1{
+  margin: 12px 0;
+}
+
+.button{
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 12px 32px;
+  width: 300px;
+  margin: auto;
+}

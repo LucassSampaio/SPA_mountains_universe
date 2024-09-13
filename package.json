@@ -1,0 +1,16 @@
+{
+  "name": "spa_mountains_universe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/scripts/index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "spa_mountains_universe": "file:"
+  }
+}
